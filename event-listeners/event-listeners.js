@@ -3,8 +3,6 @@ var pictures = ['./imgs/dog.jpg','secondimg.jpeg','thirdimg.jpeg','fourthimg.jpe
 var currentIndex = 0;
 
 
-//function chnageBackground()
-//document.body.style.backgroundcolor=color
 
 
 function showNextPicture() {
@@ -13,12 +11,10 @@ function showNextPicture() {
   if (currentIndex >= pictures.length) {
     currentIndex = 0;
   }
+  var newpicture=document.getElementsByTagName('img')
+  newpicture[0].src=pictures[currentIndex];
+  
 
   // YOUR TASK: Finish this function!
 }
 
-function promptcolor(){
-	var color=prompt("choose a color");
-	var bodycolor =document.getElementsByTagName('body');
-	bodycolor[0].style.backgroundColor=color;
-}
