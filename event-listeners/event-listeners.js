@@ -13,8 +13,6 @@ function showNextPicture() {
   }
   var newpicture=document.getElementsByTagName('img')
   newpicture[0].src=pictures[currentIndex];
-  
-
-  // YOUR TASK: Finish this function!
-}
+  }
+document.getElementsByTagName("img")[0].addEventListener("click", function (event) {showNextPicture();})
 
